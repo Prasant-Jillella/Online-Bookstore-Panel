@@ -1,0 +1,95 @@
+<head>
+<style type="text/css">
+  body
+  {
+   background-image: url("center.jpg");
+  }
+  h2
+  {
+   color:orange;font-family:Gabriola;font-size:20pt;
+  }
+  th
+  {
+   color:green;font-family:Comic Sans MS;font-size:16pt
+   }
+  input
+  {
+   color:pink;font-size:20pt;font-weight:bold;
+  }
+  td
+  {
+   color:green;font-size:15pt;font-weight:bold
+  }
+  .button {
+     border-radius:10px;
+     color:black;
+     border:0px solid #4e6096;
+     display:inline-block;
+     cursor:pointer;
+     background: #00CCCC;
+     font-family:Italic;
+     font-size:15px;
+     width: 60;
+     padding:4px 4px;
+     border-top:1px solid rgba(0,0,0,0.3);
+     background:rgba(0,0,0,0.25);
+     box-shadow:inset 0 1px rgba(255,255,255,0.3);
+}
+div
+{
+  position:relative;
+  margin:50px;
+  left:10px;
+  right:100px;
+  padding:10;
+  height:1100px;
+  width:90%;
+  font-family:Arial;
+  text-shadow:1px 1px 1px black;
+  border:1px solid rgba(0,0,0,0.3);
+  background:rgba(0,0,0,0.25);
+  box-shadow:inset 0 1px rgba(255,255,255,0.3);
+  }
+</style>
+</head>
+<html>
+<body >
+   <div>
+   <h2 align="center"><u>Catalogue</u></h2>
+    <form action="http://localhost:8080/prasant/ca">
+     <table border="1" cellpadding="5" cellspacing="5s" align="center">
+     <tr>
+	<th>Books</th>
+	<th>Book Name</th>
+	<th>Price</th>
+	<th>Add to cart</th>
+     </tr>
+     <tr>
+        <td><center><img src="WT.jpg" height=200 width=150></td></center>
+	<td>Web Technologies BLACK BOOK</td>
+	<td>Rs.300</td>
+	<td><center><input type="submit" class="button" name="WT.jpg+300" value="Add"><center></td>
+     </tr>
+     <tr>
+        <td><img src="java.jpg" height=200 width=150></td>
+        <td>Java 7 Programming BLACK BOOK</td>
+        <td>Rs.400</td>
+        <td><center><input type="submit" class="button" name="java.jpg+400" value="Add"></center></td>
+     </tr>
+     <tr>
+	<td><img src="C.jpg" height=200 width=150></td>
+        <td>The C Programming Language</td>
+	<td>Rs.100</td>
+	<td><center><input type="submit" class="button" name="C.jpeg+100" value="Add"></center></td>
+     </tr>
+     <tr>
+	<td><img src="cn.jpg" height=200 width=150></td>
+	<td>Computer Networks</td>
+	<td>Rs.350</td>
+	<td><center><input type="submit" class="button" name="cn.jpg+350" value="Add"></center></td>
+    </tr>
+  </table>
+</form>
+</div>
+</body>
+</html>	

@@ -1,0 +1,94 @@
+<html><head>
+<title>Forms</title>
+<style type="text/css">
+   .l{font-size:15pt;color:orange;font-family:Gabriola;font-weight:bold}
+   .b{font-size:15pt;color:orange;font-family:Comic Sans MS}
+body{background-image: url("center.jpg");}
+   .head{color:orange;font-family:Gabriola;font-size:20pt;}
+input{font-size:15pt;color:black;font-family:Gabriola;font-weight:bold}
+textarea{color:black;font-size:14pt}
+div
+{
+  position:relative;
+  margin:50px;
+  left:150px;
+  right:900px;
+  height:1200px;
+  width:500px;
+  font-family:Arial;
+  text-shadow:1px 1px 1px black;
+  border-top:1px solid rgba(0,0,0,0.3);
+  background:rgba(0,0,0,0.25);
+  box-shadow:inset 0 1px rgba(255,255,255,0.3);
+  }
+</style>
+<script type="text/javascript">
+.button {
+     border-radius:10px;
+     border:0px solid #4e6096;
+     display:inline-block;
+     cursor:pointer;
+     background: #00CCCC;
+     font-family:Italic;
+     font-size:15px;
+     width: 60;
+     padding:4px 4px;
+    }
+function validate()
+   {
+var n = document.myform.fname;
+var e = document.myform.email;    
+var pa = document.myform.pwd;
+var p = document.myform.pno;
+if(!n.value.match(/[A-Z][a-z]/))
+    {
+		alert("please enter capital letter at begining and should be of length atleast 6");
+		return false;
+    }
+    if(!e.value.match(/^[a-z]+[_.a-z0-9]*[@][a-z]+[.][a-z]{2,3}/))
+    {
+		alert("Invalid email id");return false;
+    }
+	if(!pa.value.match(/[A-Za-z_]{6}/))
+    {
+		alert("Password should contain only charectersand should be of length atleast6");     return false;
+    }
+	if(!p.value.match(/[0-9]{10}/))
+    {
+		alert("Phone number invalid");     return false;
+    }
+}  </script>
+</head>
+<body>
+<div>
+<p class="head" align="center"><u>Registration Form</u></p>
+<form name="myform" method="post" action="http://localhost:8080/prasant/add" onsubmit="return validate()">
+<center><label class="b">Full Name:<input type="text" Name="fname" size="15"  placeholder=" Both First & Last" maxlength="30"/></label></center><br><br>
+<center><label class="b">Email Id:<input type="text" Name="email" size="15" placeholder=" abs@xyz.com" maxlength="30"/></label></center><br><br>
+<center><label class="b">Password:<input type="password" Name="pwd" size="15"  placeholder=" Unique password" maxlength="30"/></label></center><br><br>
+<center><label class="b">Mobile no:<input type="text" Name="pno" size="15"  placeholder=" 10 digit no." maxlength="10"/></label></center><br><br><br>
+<center><label class="b">Select intrested areas:</label></center><br>
+<center><label class="l"><input type="checkbox" name="intrest" value="Computers" unchecked="unchecked"/>Computers</label></center><br>
+<center><label class="l"><input type="checkbox" name="intrest" value="Electrical" unchecked="unchecked"/>Electrical</label></center><br>
+<center><label class="l"><input type="checkbox" name="intrest" value="Others" unchecked="unchecked"/>Others</label></center><br><br><br>
+<center><label class="b">Select age:</label></center><br>
+<center><label class="l"><input type="radio" name="age" value="under20" unchecked="unchecked"/>0-19</label></center><br>
+<center><label class="l"><input type="radio" name="age" value="under40" unchecked="unchecked"/>20-40</label></center><br><br><br>
+<center><label class="b">Enter Present Address:</label></center><br>
+<center><textarea placeholder="Temporary address is preffered"></textarea></center><br><br><br>
+<center><label class="b">Select Branch:</label></center><br>
+<center><select class="l">
+<option>CSE</option>
+<option>ECE</option>
+<option>EEE</option>
+<option>IT</option>
+<option>Mech</option>
+<option>Civil</option>
+<option>Bio</option>
+<option>Others</option>
+</select></center><br><br><br>
+<center><input   type="submit" value="Submit"/>
+<input   type="reset" value="Clear"/><br></center>
+</form>
+</div>
+</body></html>

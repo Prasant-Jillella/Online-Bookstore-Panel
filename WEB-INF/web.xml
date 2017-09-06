@@ -1,0 +1,29 @@
+<web-app>
+ <servlet>
+  <servlet-name>jill</servlet-name>
+  <servlet-class>Cart</servlet-class>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>jill</servlet-name>
+  <url-pattern>/ca</url-pattern>
+ </servlet-mapping>
+
+
+ <servlet>
+  <servlet-name>jil</servlet-name>
+  <servlet-class>Show</servlet-class>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>jil</servlet-name>
+  <url-pattern>/sh</url-pattern>
+ </servlet-mapping>
+
+<servlet>
+  <servlet-name>pra</servlet-name>
+  <servlet-class>Validate</servlet-class>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>pra</servlet-name>
+  <url-pattern>/val</url-pattern>
+ </servlet-mapping>
+</web-app>

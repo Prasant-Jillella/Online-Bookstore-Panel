@@ -1,0 +1,68 @@
+<html>
+ <head>
+  <style type="text/css">
+   .l{
+    font-size:18pt;color:blue
+     }
+   .b{
+     font-size:15px;color:pink;
+     font-family:Arial;
+      }
+   body
+   {
+    background-image: url("center.jpg");
+    }
+   input
+   {
+    color:blue;font-size:18pt;font-weight:bold
+    }
+   p
+   {
+    color:green;font-size:25pt;
+   }
+.button {
+     border-radius:10px;
+     color:pink;
+     border:0px solid #4e6096;
+     display:inline-block;
+     cursor:pointer;
+     background: #00CCCC;
+     font-family:Italic;
+     font-size:15px;
+     width: 60;
+     padding:4px 4px;
+     border-top:1px solid rgba(0,0,0,0.3);
+     background:rgba(0,0,0,0.25);
+     box-shadow:inset 0 1px rgba(255,255,255,0.3);
+    }
+div
+{
+  position:relative;
+  margin:50px;
+  left:200px;
+  right:900px;
+  height:70%;
+  width:40%;
+  font-family:Arial;
+  text-shadow:1px 1px 1px black;
+  border-top:1px solid rgba(0,0,0,0.3);
+  background:rgba(0,0,0,0.25);
+  box-shadow:inset 0 1px rgba(255,255,255,0.3);
+  }
+  .h{
+    color:orange;
+   }
+ </style>
+ </head>
+ <body>
+ <div align="centre">
+  <center><h4 class="h"><u>Login Form</u></h4></center>
+  </br>
+  <form method="post" action="http://localhost:8080/prasant/val">
+   <center><pre><p class="b">Email id:     <input type="text" Name="email" size="10"  placeholder="abc@xyz.com" maxlength="11" class="b"/></p></pre></center>
+   <center><pre><p class="b">Password: <input type="password" Name="pwd" size="10" placeholder="password" maxlength="11" class="b"/></p></pre></center>
+   <br><center><pre><input class="button" type="submit" value="Submit">    <input class ="button" type="reset" value="Clear"/></center></pre>
+  </form>
+</div>
+ </body>
+</html>
